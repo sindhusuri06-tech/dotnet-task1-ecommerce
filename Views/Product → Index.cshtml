@@ -1,0 +1,19 @@
+@model IEnumerable<EcommerceApp.Models.Product>
+
+<h2>Product List</h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Price</th>
+</tr>
+
+@foreach(var item in Model)
+{
+<tr>
+<td>@item.Name</td>
+<td>@item.Price</td>
+</tr>
+}
+
+</table>
